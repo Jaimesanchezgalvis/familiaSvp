@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    --primary-color: #F0F0F3;
+    --light-color: #FFFFFF;
+    --dark-color: rgba(174, 174, 192, 0.4);
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    background: var(--primary-color);
+    color: #808B9F;
+}
+
+.button {
+    margin: auto;
+    height: 60px;
+    padding: 0 30px;
+    border-radius: 98px;
+    border: transparent solid 4px;
+    font-size: 18px;
+    background: var(--primary-color);
+    color: #808B9F;
+    box-shadow: -10px -10px 30px var(--light-color), 10px 10px 30px var(--dark-color);
+}
+
+.button:active {
+    border: var(--primary-color) solid 4px;
+    box-shadow: -20px -20px 60px var(--light-color),
+        20px 20px 60px var(--dark-color),
+        inset -3px -3px 10px var(--light-color),
+        inset 3px 3px 10px var(--dark-color);
+    zoom: 1.1;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button:hover {
+    border: var(--primary-color) solid 4px;
+    box-shadow: -10px -10px 30px var(--light-color),
+        10px 10px 30px var(--dark-color),
+        inset -3px -3px 10px var(--light-color),
+        inset 3px 3px 10px var(--dark-color);
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 1em auto;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+p {
+    margin: 0 auto;
+    font-size: 1.5em;
+    color: #808B9F;
+    font-family: 'Roboto',
+        sans-serif;
+
+}
+
+/* contendio */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-columns: 1fr;
+    margin: 1em auto;
+    align-content: space-around;
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px #cccccf,
+        -10px -10px 30px #ffffff;
+    align-items: center;
+}
+
+/* diseño botones  */
+.grid-item-boton {
+    padding: 15px;
+    margin: 0.2em auto;
+}
+
+input,
+label {
+    margin: .4rem 0;
+    border: solid;
+}
+
+#start {
+    border: none;
+    margin: 0 auto;
+    width: 100%;
+    background: var(--primary-color);
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px #cccccf,
+        -10px -10px 30px #ffffff;
+    padding: 6px;
+    color: #808B9F;
+    font-family: 'Roboto',
+        sans-serif;
+
+}
+
+
+body>div:nth-child(2)>div>div:nth-child(2)>select {
+    border: none;
+    margin: 0 auto;
+    width: 100%;
+    background: var(--primary-color);
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px #cccccf,
+        -10px -10px 30px #ffffff;
+    padding: 6px;
+    color: #808B9F;
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+/* tipo de evento */
+body>div:nth-child(1)>div {
+    margin: 2em auto;
+    padding: 1em;
+}
+
+/* tu flyer esta listo para descargar  */
+body>div:nth-child(2)>div {
+    margin: 2em auto;
+    padding: 1em;
+}
+
+/* **********************container flyer************************** */
+
+.flyer {
+    position: relative;
+    width: 685px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 30px #cccccf,
+        -10px -10px 30px #ffffff;
+}
+
+/* imagen evento */
+.container--flyer {
+    position: relative;
+    background-image: url(/assets/oradores/fomatoGeneral.jpeg);
+    background-size: contain;
+    width: 670px;
+    height: 671px;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+/* tipo de formacion */
+body>div.menu.flyer>div>p:nth-child(1) {
+    text-align: start;
+    margin-left: 30px;
+    font-size: 39px;
+    color: #cccccf;
+    margin-top: 10px;
+}
+
+/* fecha  */
+body>div:nth-child(3)>div>p:nth-child(2) {
+    text-align: start;
+    margin-left: 30px;
+    font-size: 22px;
+    line-height: 14px;
+    color: #cccccf;
+}
+
+/* hora latam */
+body>div:nth-child(3)>div>p:nth-child(3) {
+    text-align: start;
+    margin-left: 30px;
+    font-size: 17px;
+    line-height: 35px;
+    color: #cccccf;
+}
+
+/* imagen del orador  */
+body>div:nth-child(3)>div>img:nth-child(4) {
+    height: 490px;
+    padding: 0;
+    filter: drop-shadow(10px 2px 5px rgba(0, 0, 0, 0.7));
+}
+
+/* nombre orador  */
+body>div:nth-child(3)>div>p:nth-child(5) {
+    position: relative;
+    font-size: 29px;
+    line-height: 30px;
+    color: #fff;
+    z-index: 200;
+    margin-top: -8px;
+}
+
+/* posicion del orador  */
+body>div:nth-child(3)>div>p:nth-child(6) {
+    position: relative;
+    margin-top: 1px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 25px;
+    z-index: 100;
+}
+
+/* base de la foto  */
+body>div.menu.flyer>div>img.orador {
+    position: relative;
+    margin-top: -165px;
+    width: 100%;
+    z-index: 10;
+    filter: drop-shadow(10px 12px 15px rgba(0, 0, 0, 0.7));
+}
+
+
+
+
+/* *************************** opciones oradores  */
+body>div:nth-child(2)>div>div.grid-item-boton.opciones>select {
+    margin: 2px;
+}
+
+/* ***************** fotos oradores  */
+
+.divfotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 670px;
+    height: 495px;
+}
+
+/* ********************contendores orador 1 y orador 2********************  */
+/* contenedor orador 1 */
+body>div.menu.flyer>div>div>div.divorador1 {
+    width: 280px;
+    height: max-content;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 1px;
+}
+/* contenedor texto orador 1 */
+body>div.menu.flyer>div>div>div.divorador1>div {
+font-size: 10px;
+width: max-content;
+margin-left: -25px;
+text-align: end;
+margin-top: -25px;
+
+}
+/* foto orador 1 */
+body>div.menu.flyer>div>div>div.divorador1>img{
+    max-height: 270px;
+    width: auto;
+    margin-top: 10px;
+
+}
+
+/* contenedor orador 2 */
+body>div.menu.flyer>div>div>div.divorador2 {
+    width: 280px;
+    height: max-content;
+    margin-top: 30px;
+    margin-left: 1px;
+    margin-right: 10px;
+}
+/* contenedor texto orador 2 */
+body>div.menu.flyer>div>div>div.divorador2>div {
+    margin-top: -25px;
+    font-size: 10px;
+    width: max-content;
+    margin-left: 140px;
+    text-align: start;
+}
+
+/* foto orador 2  */
+body>div.menu.flyer>div>div>div.divorador2>img {
+   max-height: 270px;
+   width: auto;
+    margin-top: 10px;
+
+}
+
+
+/* *************************contendores oradores 3 al 5********************** */
+
+/* contenedor orador 3-5 */
+body>div.menu.flyer>div>div>:nth-child(1n+3) {
+    position: relative;
+    width: 250px;
+    height: max-content;
+    margin-top: -105px;
+    margin-left: -25px;
+    margin-right: -25px;
+    z-index: 50;
+}
+/* foto orador 3 */
+body>div.menu.flyer>div>div>div.divorador3>img {
+    position: relative;
+    max-height: 250px;
+    width: auto;
+    z-index: 20;
+}
+/* contendor texto orador 3 */
+body>div.menu.flyer>div>div>div.divorador3>div{
+    background-color:#909EBB;
+    border-radius: 15px;
+    margin: 0 10px;
+    padding: 3px;
+
+}
+/* texto orador 3 */
+body>div.menu.flyer>div>div>div.divorador3>div>p:nth-child(1n) {
+    color: black;
+    font-size: 16px;
+}
+
+/* foto orador 4 */
+body>div.menu.flyer>div>div>div.divorador4>img {
+    position: relative;
+    max-height: 250px;
+    width: auto;
+    z-index: 20;
+}
+/* contendor texto orador 4 */
+body>div.menu.flyer>div>div>div.divorador4>div {
+    border-radius: 15px;
+    background-color:#909EBB;
+    margin: 0 10px;
+    padding: 3px;
+}
+/* texto orador 4 */
+body>div.menu.flyer>div>div>div.divorador4>div>p:nth-child(1n) {
+    color: black;
+    font-size: 16px;
+}
+
+/* foto orador 5 */
+body>div.menu.flyer>div>div>div.divorador5>img {
+    position: relative;
+    max-height: 250px;
+    width: auto;
+    z-index: 20;
+}
+/* contendor texto orador 5 */
+body>div.menu.flyer>div>div>div.divorador5>div {
+    border-radius: 15px;
+    background-color:#909EBB;
+    margin: 0 10px;
+    padding: 3px;
+}
+/* texto orador 5 */
+body>div.menu.flyer>div>div>div.divorador5>div>p:nth-child(1n) {
+    color: black;
+    font-size: 16px;
+}
+
+/* base foto oradores */
+body>div.menu.flyer>div>img.oradores {
+    position: relative;
+    margin-top: -110px;
+    width: 100%;
+    z-index: 60;
+    filter: drop-shadow(10px 12px 15px rgba(0, 0, 0, 0.7));
+    display: none;
+}
+
+/* body>canvas{
+    margin-top: 5px;
+  border: solid;
+  width: 700px;
+  height: 700px;
+} */
+
